@@ -20,7 +20,7 @@ public class Robot : Agent
     private void Start()
     {
         rigRobot = GetComponent<Rigidbody>();
-        rigBall = GameObject.Find("Soccer-Ball").GetComponent<Rigidbody>();
+        rigBall = GameObject.Find("Ball").GetComponent<Rigidbody>();
     }
 
     /// <summary>
@@ -39,8 +39,8 @@ public class Robot : Agent
         transform.position = posRobot;
 
         //隨機的足球位置
-        Vector3 posBall = new Vector3(Random.Range(-2.5f, 2.5f), 0.05f, Random.Range(1f, 2f));
-        transform.position = posBall;
+        Vector3 posBall = new Vector3(Random.Range(-2.5f, 2.5f), 0.05f, Random.Range(1.048f, 4.0f));
+        rigBall.position = posBall;
 
         // 足球尚未進入球門
         Ball.complete = false;
