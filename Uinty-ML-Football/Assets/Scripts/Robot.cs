@@ -4,7 +4,7 @@ using MLAgents.Sensors;
 
 public class Robot : Agent
 {
-    [Header("速度"), Range(1, 50)]
+    [Header("速度"), Range(1, 1000)]
     public float speed = 10;
 
     /// <summary>
@@ -35,11 +35,11 @@ public class Robot : Agent
         rigBall.angularVelocity = Vector3.zero;
 
         // 隨機的機器人位置
-        Vector3 posRobot = new Vector3(Random.Range(-2.5f, 2.5f), 0.05f, Random.Range(-2f, 0f));
+        Vector3 posRobot = new Vector3(Random.Range(-1f, 1f), 0.05f, Random.Range(-0.5f, -1.5f));
         transform.position = posRobot;
 
         //隨機的足球位置
-        Vector3 posBall = new Vector3(Random.Range(-2.5f, 2.5f), 0.05f, Random.Range(1.048f, 4.0f));
+        Vector3 posBall = new Vector3(Random.Range(-1f, 1f), 0.05f, Random.Range(0.5f, 1.5f));
         rigBall.position = posBall;
 
         // 足球尚未進入球門
