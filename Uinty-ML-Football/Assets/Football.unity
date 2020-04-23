@@ -710,20 +710,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1798611130}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &1798611132
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798611131}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.2
-  m_Height: 1.8062441
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.90966105, z: 0}
 --- !u!54 &1798611133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -776,7 +762,7 @@ MonoBehaviour:
     vectorActionDescriptions: []
     vectorActionSpaceType: 1
   m_Model: {fileID: 5022602860645237092, guid: 466e55e64eb935a40a5fe553bb453cc8, type: 3}
-  m_InferenceDevice: 1
+  m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: RobotBrain
   TeamId: 0
